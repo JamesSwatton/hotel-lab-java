@@ -40,4 +40,12 @@ public class Hotel {
     public void checkOutGuestFromBedroom(Bedroom bedroom, Guest guest) {
         bedroom.removeGuest(guest);
     }
+
+    public void checkInGuestToConferenceRoom(ConferenceRoom conferenceRoom, Guest guest) {
+        conferenceRoom.addGuest(guest);
+    }
+
+    public void checkOutGuestFromConferenceRoom(ConferenceRoom conferenceRoom, Guest guest) {
+        conferenceRoom.removeGuest(guest);
+    }
 }
