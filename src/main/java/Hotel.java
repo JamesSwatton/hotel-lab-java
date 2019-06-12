@@ -34,21 +34,14 @@ public class Hotel {
         return this.conferenceRooms.size();
     }
 
-    public void checkInGuestToBedroom(Bedroom bedroom, Guest guest) {
-        bedroom.addGuest(guest);
+    public void checkInGuestToRoom(Room room, Guest guest) {
+        room.addGuest(guest);
     }
 
-    public void checkOutGuestFromBedroom(Bedroom bedroom, Guest guest) {
-        bedroom.removeGuest(guest);
+    public void checkOutGuestFromRoom(Room room, Guest guest) {
+        room.removeGuest(guest);
     }
 
-    public void checkInGuestToConferenceRoom(ConferenceRoom conferenceRoom, Guest guest) {
-        conferenceRoom.addGuest(guest);
-    }
-
-    public void checkOutGuestFromConferenceRoom(ConferenceRoom conferenceRoom, Guest guest) {
-        conferenceRoom.removeGuest(guest);
-    }
 
     public Booking bookRoom(Bedroom bedroom, int numOfNights) {
         return newBooking = new Booking(bedroom, numOfNights);

@@ -66,4 +66,9 @@ public class BedroomTest {
         assertEquals(50, bedroom.getNightlyRate());
     }
 
+    @Test
+    public void checkIfEmpty(){
+        assertEquals(true, bedroom.isEmpty());
+    }
+
 }
